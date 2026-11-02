@@ -22,7 +22,7 @@ def thong_ket_tong_quan():
     history = load_history_data()
     
     print("\n==================================================")
-    print("📊          BÁO CÁO THỐNG KÊ NĂNG SUẤT           ")
+    print("📊                  BÁO CÁO THỐNG KÊ NĂNG SUẤT           ")
     print("==================================================")
     
     if not history:
@@ -54,7 +54,7 @@ def thong_ket_tong_quan():
         gio = round(phut / 60, 2)
         # Tạo thanh biểu đồ trực quan bằng ký tự '█' (mỗi block tương ứng 25 phút hoặc 1 phiên)
         so_block = phut // 25
-        bieu_do = "█" * int(so_block) if so_block >  0 else "▌"
+        bieu_do = "█" * int(so_block) if so_block > 0 else "▌"
         
         print(f"  • Ngày {ngay}: {phut:3d} phút (~ {gio:4.1f}h) | {bieu_do}")
         
